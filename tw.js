@@ -1,7 +1,0 @@
-tailwind.config = {
-  theme: {
-    extend: {
-      
-    },
-  },
-};
