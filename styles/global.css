@@ -1,0 +1,70 @@
+@import "fonts/segoeui.css";
+
+* {
+  font-family: "Segoe UI", sans-serif;
+}
+/* .afex-hover:hover {
+  cursor: pointer;
+} */
+
+.mail {
+  display:none;
+}
+
+.client:hover .mail {
+  display: flex;
+  gap: 5px
+}
+
+.client:hover .calen {
+  display: none
+}
+
+.client:hover .images-hover {
+  display: flex;
+}
+
+.olanrewaju {
+  display: none;
+}
+
+.react-hover:hover {
+  display: none;
+}
+
+.react-hover:hover .olanrewaju {
+  display: block;
+}
+
+.react-class:hover {
+  background:#edebe9;
+}
+
+.react-class:hover .react-hover {
+  display: none
+}
+
+.react-class:hover .olanrewaju {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.other-empty-box:active {
+  border-bottom: 2px solid #0576d9;
+}
+
+
+
+
+
+.other-empty-box:active {
+  border-bottom: 2px solid #0576d9;
+}
+
+

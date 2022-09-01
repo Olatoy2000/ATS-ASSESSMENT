@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <title>Mail - Toyyib Olalekan Oladejo - Outlook</title>
+    <link
+      rel="shortcut icon"
+      href="https://res.cdn.office.net/owamail/20220729002.18/resources/images/favicons/mail-seen.ico"
+      type="image/x-icon"
+    />
+    <link href="styles/global.css" type="text/css" rel="stylesheet" />
+    <link href="styles/mail.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body class="h-screen flex flex-col overflow-auto">
+
+    <!-- HEADER SECTION -->
+
+    <header class="bg-black w-full">
+      <div class="flex justify-between px-2 py-2">
+
+        <!-- THREE DOTS AND ITS DROPDOWNS -->
+        <div
+          class="flex gap-x-4 hover:cursor-pointer items-center overflow-visible"
+        >
+          <label
+            for="applications"
+            class="hover:bg-[#a0c5e4] mt-2 relative peer"
+          >
+            <p class="hover:cursor-pointer">
+              <abbr
+                title="App launcher"
+                class="text-[#323130] font-light bg-[#f0f0f0]"
+                ><img src="images/tdot.svg" alt="three white dots"
+              /></abbr>
+            </p>
+          </label>
+          <input
+            type="checkbox"
+            id="applications"
+            name="applications"
+            class="peer sr-only"
+          />
+          <div
+            class="hidden min-w-[18.75rem] absolute top-[-30px] left-[-10px] p-4 z-20 overflow-auto h-full peer-checked:block"
+          >
+            <section class="flex flex-col gap-4 bg-white mr-2 w-[300px]">
+              <div
+                class="flex justify-between mt-[1.875rem] mr-2 ml-[1.125rem]"
+              >
+                <label for="applications" class="relative peer">
+                  <img
+                    src="images/newdotsme.svg"
+                    class="hover:bg-[#edebe9] active:border-2 border-blue-700"
+                    alt="new dots"
+                  />
+                </label>
+                <div class="flex gap-2 items-center">
+                  <p class="text-[#0f6ebe]">Office</p>
+                  <a href="/pages/mail.html"
+                    ><img src="images/arrownew.svg" alt="arrow new"
+                  /></a>
+                </div>
+              </div>
+              <p class="text-[#252423] font-bold">Apps</p>
+              <div class="flex justify-between">
+                <ul class="p-2 bg-[#fff]">
+                  <li class="text-[#323130] font-bold text-0.8125rem">
+                    <input
+                      type="checkbox"
+                      id="outlook-app"
+                      name="outlook"
+                      class="peer sr-only"
+                    />
+                    <label
+                      for="outlook-app"
+                      class="flex items-center px-3 py-2 font-bold select-none"
+                    >
+                      <p class="flex gap-3">
+                        <img
+                          class="w-6"
+                          src="images/outlookimg.png"
+                          alt="outlook image"
+                        />Outlook
+                      </p>
+                    </label>
+                  </li>
+                  <li class="text-[#323130] font-bold text-0.8125rem">
+                    <input
+                      type="checkbox"
+                      id="word-app"
+                      name="word"
+                      class="peer sr-only"
+                    />
+                    <label
+                      for="word-app"
+                      class="flex items-center px-3 py-2 font-bold select-none"
+                    >
+                      <p class="flex gap-2">
+                        <img
+                          class="w-6"
+                          src="images/microsoft-word.png"
+                          alt="Microsoft word"
+                        />Word
+                      </p>
+                    </label>
+                  </li>
+                  <li class="text-[#323130] font-bold text-0.8125rem">
+                    <input
+                      type="checkbox"
+                      id="powerpoint-app"
+                      name="powerpoint"
+                      class="peer sr-only"
+                    />
+                    <label
+                      for="powerpoint-app"
+                      class="flex items-center px-3 py-2 font-bold select-none"
+                    >
+                      <p class="flex gap-2">
+                        <img
+                          class="w-6"
+                          src="images/powerpoint.png"
+                          alt="Power point"
+                        />Powerpoint
+                      </p>
+                    </label>
+                  </li>
+                  <li class="text-[#323130] font-bold text-0.8125rem">
+                    <input
+                      type="checkbox"
+                      id="sharepoint-app"
+                      name="sharepoint"
+                      class="peer sr-only"
+                    />
+                    <label
+                      for="sharepoint-app"
+                      class="flex items-center px-3 py-2 font-bold select-none"
+                    >
+                      <p class="flex gap-2">
+                        <img
+                          class="w-6"
+                          src="images/sharepoint-t.png"
+                          alt="SharePoint"
+                        />SharePoint
+                      </p>
+                    </label>
+                  </li>
+                  <li class="text-[#323130] font-bold text-0.8125rem">
+                    <input
+                      type="checkbox"
+                      id="yammer-app"
+                      name="yammer"
+                      class="peer sr-only"
+                    />
+                    <label
+                      for="yammer-app"
+                      class="flex items-center px-3 py-2 font-bold select-none"
+                    >
+                      <p class="flex gap-2">
+                        <img
+                          class="w-6"
+                          src="images/yammer.png"
+                          alt="Yammer"
+                        />Yammer
+                      </p>
+                    </label>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="text-[#323130] font-bold text-0.8125rem">
+                    <input
+                      type="checkbox"
+                      id="onedrive-app"
+                      name="onedrive"
+                      class="peer sr-only"
+                    />
+                    <label
+                      for="onedrive-app"
+                      class="flex items-center px-3 py-2 font-bold select-none"
+                    >
+                      <p class="flex gap-2">
+                        <img
+                          class="w-6"
+                          src="images/onedrive.jpeg"
+                          alt="One drive"
+                        />OneDrive
+                      </p>
+                    </label>
+                  </li>
+                  <li class="text-[#323130] font-bold text-0.8125rem">
+                    <input
+                      type="checkbox"
+                      id="excel-app"
+                      name="excel"
+                      class="peer sr-only"
+                    />
+                    <label
+                      for="excel-app"
+                      class="flex items-center px-3 py-2 font-bold select-none"
+                    >
+                      <p class="flex gap-2">
+                        <img
+                          class="w-6"
+                          src="images/excel.png"
+                          alt="Excel"
+                        />Excel
+                      </p>
+                    </label>
+                  </li>
+                  <li class="text-[#323130] font-bold text-0.8125rem">
+                    <input
+                      type="checkbox"
+                      id="onenote-app"
+                      name="onenote"
+                      class="peer sr-only"
+                    />
+                    <label
+                      for="onenote-app"
+                      class="flex items-center px-3 py-2 font-bold select-none"
+                    >
+                      <p class="flex gap-2">
+                        <img
+                          class="w-6"
+                          src="images/onenote.jpeg"
+                          alt="Onenote"
+                        />OneNote
+                      </p>
+                    </label>
+                  </li>
+                  <li class="text-[#323130] font-bold text-0.8125rem">
+                    <input
+                      type="checkbox"
+                      id="teams-app"
+                      name="teams-app"
+                      class="peer sr-only"
+                    />
+                    <label
+                      for="teams-app"
+                      class="flex items-center px-3 py-2 font-bold select-none"
+                    >
+                      <p class="flex gap-2">
+                        <img
+                          class="w-6"
+                          src="images/teams.jpeg"
+                          alt="Teams"
+                        />Teams
+                      </p>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+    
+                <p class="text-[#0f6ebe] flex gap-3 mt-[1.875rem] items-center ml-[1.125rem]">
+                    All apps
+                    <a href="/pages/mail.html"><img class="w-3" src="images/arrownew.svg" alt="arrow" /></a>
+                </p>
+              <div
+                class="flex flex-col gap-3 ml-[auto] mr-[auto] align-center justify-center"
+              >
+                <p class="text-[#252423]">Documents</p>
+                <img
+                  class="w-[150px] h-[100px]"
+                  src="images/environment.svg"
+                  alt="environment"
+                />
+                <p class="text-[13px] text-[#252433] mt-[8px]">
+                  your recently viewed docs <br />
+                  will show here.
+                </p>
+                <p class="text-[13px] text-[#605e5c] mt-[3px]">
+                  create new docs and collaborate <br />
+                  with others
+                </p>
+                <div class="flex space-x-2 justify-center">
+                  <div>
+                    <button
+                      type="button"
+                      class="inline-block px-6 pt-2.5 pb-2 bg-white-600 text-[#0f6ebe] hover:text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex align-center"
+                    >
+                      New
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          fill="#0f6ebe"
+                          class="hover:fill-white"
+                          d="M128 184a8.5 8.5 0 0 1-5.7-2.3l-80-80a8.1 8.1 0 0 1 11.4-11.4l74.3 74.4l74.3-74.4a8.1 8.1 0 0 1 11.4 11.4l-80 80a8.5 8.5 0 0 1-5.7 2.3Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- STOPS -->
+          <a href="/pages/mail.html">
+            <img src="images/afexlogo.svg" alt="afex logo" class="w-20" />
+          </a>
+          <p class="font-semibold text-white pr-3 pl-2 text-[16px]">
+            <a href="/pages/mail.html">Outlook</a>
+          </p>
+
+          <!-- SEARCH WITH ITS DROPDOWN -->
+          <div
+            class="flex gap-2 bg-white/70 z-[10] focus-within:bg-white rounded p-1.5 w-[350px] focus-within:overflow-visible focus-within:w-[600px] peer relative mt-[0.2rem]"
+          >
+            <img
+              src="images/searchcircle.svg"
+              class="focus-within:hidden"
+              alt="search icon"
+            />
+            <input
+              type="text"
+              placeholder="Search"
+              class="bg-transparent placeholder-[#004c8a] focus-within:bg-white focus-within:text-[#6a6866] focus-within:outline-none peer text-sm text-[#004c8a] py-px px-0.5 flex-1"
+            />
+            <div
+              class="bg-white w-[37.5rem] text-[0.875rem] p-2 flex flex-col absolute top-[2rem] left-0 z-13 right-0 hidden peer-focus-within:inline-block mt-[0.5rem]"
+            >
+              <div class="flex justify-start pl-1 mb-3">
+                <p class="text-[#323130]">Suggested searches</p>
+              </div>
+              <div class="flex justify-between mb-3">
+                <div class="flex gap-4">
+                  <p
+                    class="text-[white] text-[13px] border-2 bg-[#0c690c] rounded-full w-8 h-8 p-1 flex place-content-center"
+                  >
+                    GE
+                  </p>
+                  <p>
+                    Gloria Onosetale Eromonsele <br />
+                    from:"geromonsele@afexnigeria.com"
+                  </p>
+                </div>
+                <img src="images/single-person.svg" alt="single-person" />
+              </div>
+              <div class="flex justify-between mb-3">
+                <div class="flex gap-4">
+                  <p
+                    class="text-[white] text-[13px] border-2 bg-[#d13438] rounded-full w-8 h-8 p-1 flex place-content-center"
+                  >
+                    CC
+                  </p>
+                  <p>
+                    Corporate Communications <br />
+                    to:"cc@afexnigeria.com"
+                  </p>
+                </div>
+                <img src="images/single-person.svg" alt="single-person" />
+              </div>
+              <div class="flex justify-between mb-3">
+                <div class="flex gap-4">
+                  <p
+                    class="text-[white] text-[13px] border-2 bg-[#8d572d] rounded-full w-8 h-8 p-1 flex place-content-center"
+                  >
+                    R
+                  </p>
+                  <p>
+                    Ridwan Olanrewaju in Teams <br />
+                    from:"noreply@emeaemail.teams.microsoft.com"
+                  </p>
+                </div>
+                <img src="images/single-person.svg" alt="single-person" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-x-6 hover:cursor-pointer overflow-auto">
+          <div
+            class="flex gap-x-2 items-center px-3 hover:bg-white text-white hover:text-blue-700 hover:border-x-4 border-x-blue-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="currentColor"
+                d="M2 8v16h22v-3.375l4.563 2.28l1.437.72V8.375l-1.438.72L24 11.374V8H2zm2 2h18v12H4V10zm24 1.625v8.75l-4-2v-4.75l4-2z"
+              />
+            </svg>
+            <p class="text-sm text-current self-center whitespace-nowrap">
+              Teams call
+            </p>
+          </div>
+
+          <img
+            class="w-5 hover:cursor-pointer hover:bg-[#0077d9] active:bg-white"
+            src="images/boxline.svg"
+            alt="box change"
+          />
+          <img
+            class="w-5 hover:cursor-pointer hover:bg-[#0576d9] active:bg-white"
+            src="images/calendermark.svg"
+            alt="calender with mark"
+          />
+          <img
+            class="w-5 hover:cursor-pointer hover:bg-[#0576d9] active:bg-white"
+            src="images/alertring.svg"
+            alt="ring"
+          />
+          <label for="settings-dropdown" class="mt-4 relative peer">
+            <img
+              class="w-5 hover:cursor-pointer hover:bg-[#0077d9] active:bg-white"
+              src="images/settings.svg"
+              alt="settings dropdown"
+            />
+          </label>
+
+          <img
+            class="w-5 hover:cursor-pointer hover:bg-[#0576d9] active:bg-white"
+            src="images/question.svg"
+            alt="question mark"
+          />
+          <img
+            class="w-5 hover:cursor-pointer hover:bg-[#0576d9] active:bg-white"
+            src="images/megaphone.svg"
+            alt="megaphone"
+          />
+          <p
+            class="text-[white] text-[13px] border-2 rounded-full w-12 h-12 p-3 flex place-content-center"
+          >
+            TO
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+
+    <main class="flex overflow-auto flex-1">
+        
+      <!-- FIRST FLEX COLUMN -->
+
+      <div
+        class="flex flex-col gap-x-2.5 w-[48px] h-full bg-[#f3f2f1] border border-r-[#edebe9 overflow-auto"
+      >
+        <div class="p-1.5 border-2 border-l-[#0077d9] hover:bg-white mb-1.5">
+          <a href="/pages/mail.html"
+            ><abbr title="mail"
+              ><img src="images/smallenvelop.svg" alt="small envelop" /></abbr
+          ></a>
+        </div>
+        <a href="/pages/calender.html"
+          ><abbr title="calender">
+            <div class="p-1.5 grayscale hover:bg-white hover:grayscale-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 36 36"
+              >
+                <path
+                  fill="#0077d9"
+                  d="M32.25 6h-4v3a2.2 2.2 0 1 1-4.4 0V6H12.2v3a2.2 2.2 0 0 1-4.4 0V6h-4A1.78 1.78 0 0 0 2 7.81v22.38A1.78 1.78 0 0 0 3.75 32h28.5A1.78 1.78 0 0 0 34 30.19V7.81A1.78 1.78 0 0 0 32.25 6ZM10 26H8v-2h2Zm0-5H8v-2h2Zm0-5H8v-2h2Zm6 10h-2v-2h2Zm0-5h-2v-2h2Zm0-5h-2v-2h2Zm6 10h-2v-2h2Zm0-5h-2v-2h2Zm0-5h-2v-2h2Zm6 10h-2v-2h2Zm0-5h-2v-2h2Zm0-5h-2v-2h2Z"
+                  class="clr-i-solid clr-i-solid-path-1"
+                />
+                <path
+                  fill="#0077d9"
+                  d="M10 10a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z"
+                  class="clr-i-solid clr-i-solid-path-2"
+                />
+                <path
+                  fill="#0077d9"
+                  d="M26 10a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z"
+                  class="clr-i-solid clr-i-solid-path-3"
+                />
+                <path fill="none" d="M0 0h36v36H0z" />
+              </svg>
+            </div>
+          </abbr>
+        </a>
+        <a href="/pages/mail.html"
+          ><abbr title="people">
+            <div class="p-1.5 grayscale hover:bg-white hover:grayscale-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 12 12"
+              >
+                <path
+                  fill="#0077d9"
+                  d="M4 6a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm4.5 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3ZM2.25 7C1.56 7 1 7.56 1 8.25c0 0 0 2.25 3 2.25c2.378 0 2.871-1.414 2.973-2C7 8.347 7 8.25 7 8.25C7 7.56 6.44 7 5.75 7h-3.5Zm5.746 1.6a2.645 2.645 0 0 1-.09.536c-.063.223-.167.49-.342.765a4.1 4.1 0 0 0 .935.099c2.5 0 2.5-1.75 2.5-1.75c0-.69-.56-1.25-1.25-1.25H7.62c.24.358.379.787.379 1.25v.25l-.003.1Z"
+                />
+              </svg>
+            </div> </abbr
+        ></a>
+        <a href="/pages/mail.html"
+          ><abbr title="files">
+            <div class="p-1.5 grayscale hover:bg-white hover:grayscale-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="#0077d9"
+                  d="m4.828 10.485l5.657-5.657a3 3 0 0 1 4.243 4.243L8.01 15.788a1.5 1.5 0 0 1-2.121-2.121l6.01-6.01a.5.5 0 1 0-.707-.708l-6.01 6.01a2.5 2.5 0 0 0 3.535 3.536l6.718-6.717A4 4 0 1 0 9.778 4.12L4.12 9.778a.5.5 0 0 0 .707.707Z"
+                />
+              </svg>
+            </div> </abbr
+        ></a>
+
+        <div class="p-1.5 text-[#616161] hover:bg-white hover:text-blue">
+          <a href="/pages/mail.html"
+            ><abbr title="To Do"
+              ><img src="images/mark.png" alt="button" class="w-5" /></abbr
+          ></a>
+        </div>
+        <div class="p-1.5 text-[#616161] hover:bg-white hover:text-blue">
+          <abbr title="Go to yammer"
+            ><a href="/pages/mail.html"
+              ><img
+                src="images/yammerlook.svg"
+                alt="yammer look"
+                class="w-5" /></a
+          ></abbr>
+        </div>
+        <div class="p-1.5 text-[#616161] hover:bg-white hover:text-blue">
+          <a href="/pages/mail.html"
+            ><abbr title="Bookings"
+              ><img
+                src="images/bookings.svg"
+                alt="bookings"
+                class="w-5" /></abbr
+          ></a>
+        </div>
+        <div class="p-1.5 text-[#616161] hover:bg-white hover:text-blue">
+          <a href="/pages/mail.html"
+            ><abbr title="Go to Onedrive for business"
+              ><img
+                src="images/onedrive.svg"
+                alt="onedrive"
+                class="w-5" /></abbr
+          ></a>
+        </div>
+        <a href="/pages/mail.html"
+          ><abbr title="more apps"
+            ><div class="p-1.5 text-[#616161] hover:bg-white hover:text-blue">
+              <svg class="w-8 h-8">
+                <use xlink:href="images/global.svg#application"></use>
+              </svg>
+            </div> </abbr
+        ></a>
+      </div>
+
+      <!-- SECOND FLEX -->
+      <div>
+        <input
+          type="checkbox"
+          name="settings"
+          id="settings-dropdown"
+          class="peer sr-only"
+        />
+        <article
+          class="hidden min-w-[18.75rem] max-w-[650px] h-full overflow-auto absolute bg-white right-[10px] p-4 z-20 peer-checked:block"
+        >
+          <section
+            class="flex flex-col gap-8 bg-white mr-2 min-w-[18.75rem] max-w-[40.625rem] overflow-auto h-full"
+          >
+            <article class="sticky bg-white top-0 shrink-0 w overflow-auto">
+              <div
+                class="flex justify-between mt-[1.875rem] mr-2 mb-3 ml-[1.125rem] items-center"
+              >
+                <h1 class="text-[#252423] font-medium text-[20px]">
+                  Settings
+                </h1>
+                <label for="settings-dropdown" class="relative peer">
+                  <abbr
+                    title="Close pane"
+                    class="text-[#323130] font-light bg-[#f0f0f0]"
+                  >
+                    <img
+                      src="images/cross.svg"
+                      class="hover:bg-[#edebe9] hover:cursor-pointer active:border-2 border-blue-700"
+                      alt="cross-box"
+                    />
+                  </abbr>
+                </label>
+              </div>
+              <div class="flex gap-2 bg-[#f9f8f7] border-2 border-blue-700 rounded p-1.5 flex-1 relative mt-[0.2rem]">
+                <img src="images/code-search.svg" alt="search icon" />
+                <input
+                  type="text"
+                  placeholder="Search Outlook settings "
+                  class="bg-transparent placeholder-[#62615f] outline-none flex-1 peer text-sm text-[#62615f] py-px px-0.5"
+                />
+              </div>
+            </article>
+            <span class="text-[#323130] text-[14px] font-bold">Themes</span>
+            <article class="flex justify-between overflow-auto shrink-0">
+              <div
+                class="flex justify-start gap-1 text-[14px] text-[6e6e6e] items-center font-light"
+              >
+                <p>Dark mode</p>
+                <abbr title="Some themes aren't available in Dark mode"
+                  ><img src="images/new-circledot.svg" alt=" new circle"
+                /></abbr>
+              </div>
+              <div>
+                <div class="flex justify-center">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label
+                      class="form-check-label inline-block text-gray-800"
+                      for="flexSwitchCheckDefault"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="flex justify-between">
+              <div
+                class="flex justify-start gap-1 text-[14px] text-[6e6e6e] items-center font-light"
+              >
+                <p>Focused inbox</p>
+                <abbr
+                  title="Sort messages into Focused and Others"
+                  class="bg-white-700"
+                  ><img src="images/new-circledot.svg" alt=" new circle"
+                /></abbr>
+              </div>
+              <div>
+                <div class="flex justify-center">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label
+                      class="form-check-label inline-block text-gray-800"
+                      for="flexSwitchCheckDefault"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="flex justify-between overflow-auto shirnk-0">
+              <div
+                class="flex justify-start gap-1 text-[14px] text-[6e6e6e] items-center font-light"
+              >
+                <p>Destop notifications</p>
+                <abbr
+                  title="To manage notifications for mails and upcoming events separately, go to Settings > General > Notifications"
+                  ><img src="images/new-circledot.svg" alt=" new circle"
+                /></abbr>
+              </div>
+              <div>
+                <div class="flex justify-center">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label
+                      class="form-check-label inline-block text-gray-800"
+                      for="flexSwitchCheckDefault"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <div
+              class="flex justify-start gap-1 text-[14px] text-[6e6e6e] items-center font-light overflow-auto shrink-0"
+            >
+              <p>Display density</p>
+              <abbr
+                title="choose how much content fit on the screen. Depending on your choice some features might be turned off by default"
+                ><img src="images/new-circledot.svg" alt=" new circle"
+              /></abbr>
+            </div>
+            <article class="flex gap-1 overflow-auto shrink-0">
+              <div class="flex flex-col gap-1">
+                <div
+                  class="bg-white text-[#979593] border-[#d2d0ce] border-2 border-solid active:bg-[#ede8f9] active:text-[#430aba] active:border-[#430aba] active:border-2 active:border-solid"
+                >
+                  <svg
+                    width="90px"
+                    viewBox="0 0 80 70"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>Full unselected</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                      id="Full-unselected"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <rect
+                        id="Rectangle"
+                        fill="#FFFFFF"
+                        fill-rule="nonzero"
+                        x="0"
+                        y="0"
+                        width="80"
+                        height="70"
+                      ></rect>
+                      <g
+                        id="Group"
+                        transform="translate(6.000000, 13.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="Rectangle"
+                          fill="#ffffff"
+                          x="0"
+                          y="0"
+                          width="68"
+                          height="21"
+                        ></rect>
+                        <circle
+                          id="Oval"
+                          fill="currentColor"
+                          cx="7"
+                          cy="8"
+                          r="4"
+                        ></circle>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="15"
+                          y="4"
+                          width="49"
+                          height="6"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="15"
+                          y="12"
+                          width="22"
+                          height="5"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="39"
+                          y="12"
+                          width="25"
+                          height="5"
+                        ></rect>
+                      </g>
+                      <g
+                        id="Group"
+                        transform="translate(6.000000, 36.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="Rectangle"
+                          fill="#F3F2F1"
+                          class="active:bg-[#ede8f9]"
+                          x="0"
+                          y="0"
+                          width="68"
+                          height="21"
+                        ></rect>
+                        <circle
+                          id="Oval"
+                          fill="currentColor"
+                          cx="7"
+                          cy="8"
+                          r="4"
+                        ></circle>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="15"
+                          y="4"
+                          width="50"
+                          height="6"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="15"
+                          y="12"
+                          width="22"
+                          height="5"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="39"
+                          y="12"
+                          width="26"
+                          height="5"
+                        ></rect>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-[14px] text-[6e6e6e] self-center">Roomy</p>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div
+                  class="bg-white border-[#d2d0ce] text-[#979593] border-2 border-solid active:bg-[#ede8f9] active:text-[#430aba] active:border-[#430aba] active:border-2 active:border-solid"
+                >
+                  <svg
+                    width="90px"
+                    viewBox="0 0 80 70"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>Med unselected</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                      id="Med-unselected"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <rect
+                        id="Rectangle"
+                        fill="#FFFFFF"
+                        fill-rule="nonzero"
+                        x="0"
+                        y="0"
+                        width="80"
+                        height="70"
+                      ></rect>
+                      <g
+                        id="Group-2"
+                        transform="translate(7.000000, 29.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="Rectangle"
+                          fill="#F3F2F1"
+                          class="active:bg-[#ede8f9]"
+                          x="0"
+                          y="0"
+                          width="66"
+                          height="12"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="4"
+                          y="4"
+                          width="58"
+                          height="4"
+                        ></rect>
+                      </g>
+                      <g
+                        id="Group-2"
+                        transform="translate(7.000000, 43.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="Rectangle"
+                          fill="#F3F2F1"
+                          class="active:bg-[#ede8f9]"
+                          x="0"
+                          y="0"
+                          width="66"
+                          height="12"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="4"
+                          y="4"
+                          width="58"
+                          height="4"
+                        ></rect>
+                      </g>
+                      <g
+                        id="Group-2"
+                        transform="translate(7.000000, 15.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="Rectangle"
+                          fill="#F3F2F1"
+                          x="0"
+                          y="0"
+                          width="66"
+                          height="12"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="4"
+                          y="4"
+                          width="58"
+                          height="4"
+                        ></rect>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-[14px] text-[6e6e6e] self-center">Cozy</p>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div
+                  class="bg-white text-[#979593] border-[#d2d0ce] border-2 border-solid active:bg-[#ede8f9] active:text-[#430aba] active:border-[#430aba] active:border-2 active:border-solid"
+                >
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg
+                    width="90px"
+                    viewBox="0 0 80 70"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>Compact unselected</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                      id="Compact-unselected"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <rect
+                        id="Rectangle"
+                        fill="#0078D4"
+                        fill-rule="nonzero"
+                        x="0"
+                        y="0"
+                        width="80"
+                        height="70"
+                      ></rect>
+                      <rect
+                        id="Rectangle"
+                        fill="#FFFFFF"
+                        fill-rule="nonzero"
+                        x="0"
+                        y="0"
+                        width="80"
+                        height="70"
+                      ></rect>
+                      <g
+                        id="Group-2"
+                        transform="translate(7.000000, 13.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="Rectangle"
+                          fill="#F3F2F1"
+                          x="0"
+                          y="0"
+                          width="66"
+                          height="8"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="4"
+                          y="2.28571429"
+                          width="58"
+                          height="3.42857143"
+                        ></rect>
+                      </g>
+                      <g
+                        id="Group-2"
+                        transform="translate(7.000000, 22.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="Rectangle"
+                          fill="#F3F2F1"
+                          x="0"
+                          y="0"
+                          width="66"
+                          height="8"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="4"
+                          y="2.28571429"
+                          width="58"
+                          height="3.42857143"
+                        ></rect>
+                      </g>
+                      <g
+                        id="Group-2"
+                        transform="translate(7.000000, 31.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="Rectangle"
+                          fill="#F3F2F1"
+                          x="0"
+                          y="0"
+                          width="66"
+                          height="8"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="4"
+                          y="2.28571429"
+                          width="58"
+                          height="3.42857143"
+                        ></rect>
+                      </g>
+                      <g
+                        id="Group-2"
+                        transform="translate(7.000000, 40.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="Rectangle"
+                          fill="#F3F2F1"
+                          x="0"
+                          y="0"
+                          width="66"
+                          height="8"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="4"
+                          y="2.28571429"
+                          width="58"
+                          height="3.42857143"
+                        ></rect>
+                      </g>
+                      <g
+                        id="Group-2"
+                        transform="translate(7.000000, 49.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="Rectangle"
+                          fill="#F3F2F1"
+                          x="0"
+                          y="0"
+                          width="66"
+                          height="8"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill="currentColor"
+                          x="4"
+                          y="2.28571429"
+                          width="58"
+                          height="3.42857143"
+                        ></rect>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-[14px] text-[6e6e6e] self-center">Compact</p>
+              </div>
+            </article>
+            <article class="flex flex-col gap-2 overflow-auto shrink-0">
+              <p class="text-[#6e6e6e] text-[14px]">Arrange message list</p>
+              <label for="message-list" class="text-[#323130] text-[14px]">
+                <input
+                  type="radio"
+                  id="message-list"
+                  name="message-list"
+                  class="mr-2"
+                />Group into conversations
+              </label>
+              <label for="message-list" class="text-[#323130] text-[14px]">
+                <input
+                  type="radio"
+                  id="message-list"
+                  name="message-list"
+                  class="mr-2"
+                />Show each message separately
+              </label>
+            </article>
+            <article class="flex flex-col gap-2 overflow-auto shrink-0">
+              <p class="text-[#6e6e6e] text-[14px]">
+                Arrange the reading pane
+              </p>
+              <label
+                for="reading-pane-list"
+                class="text-[#323130] text-[14px]"
+              >
+                <input
+                  type="radio"
+                  id="reading-pane-list"
+                  name="reading-pane"
+                  class="mr-2"
+                />Newest on the top
+              </label>
+              <label
+                for="reading-pane-list"
+                class="text-[#323130] text-[14px]"
+              >
+                <input
+                  type="radio"
+                  id="reading-pane-list"
+                  name="reading-pane"
+                  class="mr-2"
+                />Newest on bottom
+              </label>
+              <label
+                for="reading-pane-list"
+                class="text-[#323130] text-[14px]"
+              >
+                <input
+                  type="radio"
+                  id="reading-pane-list"
+                  name="reading-pane"
+                  class="mr-2"
+                />Show each message separately
+              </label>
+            </article>
+            <article class="flex flex-col gap-2 overflow-auto shrink-0">
+              <p class="text-[#6e6e6e] text-[14px]">Reading pane</p>
+              <label for="reading-list" class="text-[#323130] text-[14px]">
+                <input
+                  type="radio"
+                  id="reading-list"
+                  name="reading-pane"
+                  class="mr-2"
+                />Show on the right
+              </label>
+              <label for="reading-list" class="text-[#323130] text-[14px]">
+                <input
+                  type="radio"
+                  id="reading-list"
+                  name="reading-pane"
+                  class="mr-2"
+                />Show on the bottom
+              </label>
+              <label for="reading-list" class="text-[#323130] text-[14px]">
+                <input
+                  type="radio"
+                  id="reading-list"
+                  name="reading-pane"
+                  class="mr-2"
+                />Hide
+              </label>
+            </article>
+            <article class="flex gap-1 overflow-auto shrink-0 bg-white items-center sticky bottom-0">
+              <span class="text-[#0061b1] text-[12px]"
+                >View all outlook settings</span>
+              <img src="/images/imagebos-outline.svg" alt="box outline" />
+            </article>
+          </section>
+        </article>
+      </div>
+
+      <section class="flex flex-1 flex-col bg-[#f0f0f0] overflow-auto">
+        <div class="flex justify-between py-2 pr-[50px] items-center bg-[#f3f2f1] overflow-auto">
+          <section class="flex gap-x-4 overflow-auto hover:cursor-pointer">
+            <label
+              for="favorite-section"
+              class="hover:bg-[#edebe9] mt-2 relative overflow-auto peer"
+            >
+              <p class="hover:cursor-pointer">
+                <abbr
+                  title="Toggle Left Pane"
+                  class="text-[#323130] font-light bg-[#f0f0f0]"
+                  ><img
+                    src="images/threelines.svg"
+                    alt="three dotted lines"
+                    class="w-[30px]"
+                /></abbr>
+              </p>
+            </label>
+            <a href="/pages/new-message.html">
+              <div class="flex gap-2.5 p-1.5 bg-[#0576d9] rounded-md">
+                <img src="images/pensearch.svg" alt="pen search" />
+                <p class="text-[14px] text-white">New message</p>
+              </div>
+            </a>
+            <div class="flex gap-2.5 items-center hover:bg-[#edebe9]">
+              <img class="w-5" src="images/undo.svg" alt="undo icon" />
+              <p class="text-[14px] text-[#323130]">Undo</p>
+            </div>
+            <div class="flex gap-2.5 items-center hover:bg-[#edebe9]">
+              <img
+                class="w-5"
+                src="images/blue-open-envelop.svg"
+                alt="mark as read icon"
+              />
+              <p class="text-[14px] whitespace-nowrap text-[#323130]">
+                Mark all as read
+              </p>
+            </div>
+          </section>
+          <section>
+            <div
+              class="flex gap-[5px] ml-[30px] text-[#0061b1] items-center hover:bg-[#edebe9]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  d="M14.25 2.5h-.75v-1h-1.25v1h-8.5v-1H2.5v1h-.75A1.25 1.25 0 0 0 .5 3.75v9.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25v-9.5a1.25 1.25 0 0 0-1.25-1.25zM1.75 3.75h12.5V5H1.75V3.75zm0 9.5v-7h12.5v7z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M3 8h1.1v1.2H3zm0 2.4h1.1v1.2H3zM11.8 8h1.1v1.2h-1.1zm0 2.4h1.1v1.2h-1.1zM9.6 8h1.1v1.2H9.6zm0 2.4h1.1v1.2H9.6zM7.4 8h1.1v1.2H7.4zm0 2.4h1.1v1.2H7.4zM5.2 8h1.1v1.2H5.2zm0 2.4h1.1v1.2H5.2z"
+                />
+              </svg>
+              <div class="flex flex-col gap-[2px]">
+                <p class="text-[14px]">knowledge sharing session...</p>
+                <time datetime="3:00" class="text-[12px]">3:00PM</time>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="flex flex-1 overflow-auto relative">
+          <article>
+            <input
+              type="checkbox"
+              id="favorite-section"
+              name="favorite"
+              class="peer sr-only"
+            />
+            <div
+              class="hidden min-w-[15.625rem] overflow-auto h-full peer-checked:block"
+            >
+              <ul class="p-2 bg-[#f3f2f1]">
+                <li class="text-[#323130] font-bold text-0.8125rem">
+                  <input
+                    type="checkbox"
+                    id="fav"
+                    name="favorite"
+                    class="peer sr-only"
+                  />
+                  <label
+                    for="fav"
+                    class="flex items-center px-3 py-2 font-bold select-none"
+                  >
+                    <span
+                      ><img
+                        src="images/greater-than-caret.svg"
+                        alt="caret greater than" /></span
+                    >Favorite
+                  </label>
+                  <div class="hidden overflow-auto shrink-0 peer-checked:block">
+                    <ul class="peer-checked:grid gap-1 pl-8">
+                      <li
+                        class="text-[#4b4a4a] flex items-center px-3 py-2 font-light"
+                      >
+                        <span class="pr-2"
+                          ><img src="images/inbox.svg" alt="inbox icon"
+                        /></span>
+                        Inbox
+                      </li>
+                      <li
+                        class="text-[#4b4a4a] flex items-center px-3 py-2 font-light"
+                      >
+                        <span class="pr-2"
+                          ><img src="images/sent-item.svg" alt="sent icon"
+                        /></span>
+                        Sent-items
+                      </li>
+                      <li
+                        class="text-[#4b4a4a] flex gap-4 px-2 py-2 justify-between font-light"
+                      >
+                        <p class="flex gap-2">
+                          <img src="images/draft.svg" alt="draft icon" />Drafts
+                        </p>
+                        <p>1</p>
+                      </li>
+                    </ul>
+                    <p class="text-[#0061b1] text-center">Add favorite</p>
+                  </div>
+                </li>
+
+                <li class="text-[#323130] font-bold text-0.8125rem">
+                  <input
+                    type="checkbox"
+                    id="favor"
+                    name="favorite"
+                    class="peer sr-only"
+                  />
+                  <label
+                    for="favor"
+                    class="flex items-center px-3 py-2 font-bold select-none"
+                  >
+                    <span
+                      ><img
+                        src="images/greater-than-caret.svg"
+                        alt="caret greater than" /></span
+                    >folder
+                  </label>
+                  <div class="hidden peer-checked:block">
+                    <ul class="peer-checked:grid gap-1 pl-8">
+                      <li
+                        class="text-[#4b4a4a] flex items-center px-3 py-2 font-light"
+                      >
+                        <span class="pr-2"
+                          ><img src="images/inbox.svg" alt="inbox icon"
+                        /></span>
+                        Inbox
+                      </li>
+                      <li
+                        class="text-[#4b4a4a] flex gap-4 px-2 py-2 justify-between font-light"
+                      >
+                        <p class="flex gap-2">
+                          <img src="images/draft.svg" alt="draft icon" />Drafts
+                        </p>
+                        <p>1</p>
+                      </li>
+                      <li
+                        class="text-[#4b4a4a] flex items-center px-3 py-2 font-light"
+                      >
+                        <span class="pr-2"
+                          ><img src="images/sent-item.svg" alt="sent icon"
+                        /></span>
+                        Sent-items
+                      </li>
+                      <li
+                        class="text-[#4b4a4a] flex gap-4 px-2 py-2 justify-between font-light"
+                      >
+                        <p class="flex gap-2">
+                          <img src="images/draft.svg" alt="draft icon" />Deleted
+                          items
+                        </p>
+                        <p>3</p>
+                      </li>
+                      <li
+                        class="text-[#4b4a4a] flex items-center px-3 py-2 font-light"
+                      >
+                        <span class="pr-2"
+                          ><img
+                            src="images/folder-junk-con.svg"
+                            alt="sent icon"
+                        /></span>
+                        Junk emails
+                      </li>
+                      <li
+                        class="text-[#4b4a4a] flex items-center px-3 py-2 font-light"
+                      >
+                        <span class="pr-2"
+                          ><img
+                            src="images/archive-outline.svg"
+                            alt="sent icon"
+                        /></span>
+                        Archive
+                      </li>
+                      <li
+                        class="text-[#4b4a4a] flex items-center px-3 py-2 font-light"
+                      >
+                        <span class="pr-2"
+                          ><img src="images/notes.svg" alt="sent icon"
+                        /></span>
+                        Notes
+                      </li>
+                      <li
+                        class="text-[#4b4a4a] flex items-center px-3 py-2 font-light"
+                      >
+                        <span class="pr-2"
+                          ><img
+                            src="images/folder-junk-con.svg"
+                            alt="sent icon"
+                        /></span>
+                        Conversation His...
+                      </li>
+                    </ul>
+                    <p class="text-[#0061b1] text-center">Create new folder</p>
+                  </div>
+                </li>
+                <li class="text-[#323130] font-bold text-0.8125rem">
+                  <input
+                    type="checkbox"
+                    id="favorit"
+                    name="favorite"
+                    class="peer sr-only"
+                  />
+                  <label
+                    for="favorit"
+                    class="flex items-center px-3 py-2 font-bold select-none"
+                  >
+                    <span
+                      ><img
+                        src="images/greater-than-caret.svg"
+                        alt="caret greater than" /></span
+                    >Groups
+                  </label>
+                  <div class="hidden peer-checked:block">
+                    <ul class="peer-checked:grid gap-1 pl-8">
+                      <li class="text-[#0061b1] text-center font-light">
+                        New group
+                      </li>
+                      <li class="text-[#0061b1] text-center font-light">
+                        Discover groups
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="flex flex-col overflow-auto relative h-full">
+            <div
+              class="bg-white flex justify-between pl-[10px] pr-[25px] border-b border-solid border-[#f0f0f0] pt-2 pb-[4px] min-w-[350px] max-w-[600px] sticky shrink-0 top-0 overflow-visible items-baseline"
+            >
+              <div class="flex gap-4 text-[16px]">
+                <img src="images/circle-mark.svg" alt="circle mark" />
+                <label
+                  class="text-[#201f1e] hover:cursor-pointer hover:bg-[#edebe9]"
+                  for="focus-client-message"
+                  class="peer"
+                >
+                  Focused
+                </label>
+                <label
+                  class="text-[#323130] border-[#0576d9] hover:cursor-pointer hover:bg-[#edebe9]"
+                  for="other-empty-box"
+                  class="peer"
+                >
+                  Other
+                </label>
+              </div>
+
+              <div
+                class="flex gap-2 text-[16px] text-[#323130] border-[#0576d9] hover:cursor-pointer hover:bg-[#edebe9] relative"
+              >
+                <label for="filter-flex" class="hover:bg-[#edebe9] mt-4 peer">
+                  <div class="flex gap-1 peer">
+                    <img src="images/filter-main.svg" alt="filter icon" />
+                    <p>Filter</p>
+                  </div>
+                </label>
+                <input
+                  type="checkbox"
+                  name="filter-flex"
+                  id="filter-flex"
+                  class="peer sr-only"
+                />
+                <div
+                  class="hidden min-w-[200px] absolute bg-white top-[60px] right-[-30px] p-2 peer-checked:block"
+                >
+                  <section class="flex gap-2 justfy-start bg-white">
+                    <img src="/images/check-mark.svg" alt="" />
+                    <img src="/images/envelop-knowledge.svg" alt="" />
+                    <span>All</span>
+                  </section>
+                  <section
+                    class="flex bg-white items-center justify-start gap-6 pb-2"
+                  >
+                    <div></div>
+                    <div class="flex gap-3 font-light">
+                      <img
+                        src="/images/unread-envelop.svg"
+                        alt="Unread envelop"
+                      />
+                      Unread
+                    </div>
+                  </section>
+                  <section
+                    class="flex bg-white items-center justify-start gap-6 pb-2"
+                  >
+                    <div></div>
+                    <div class="flex gap-4 font-light">
+                      <img src="/images/flag-knowledge.svg" alt="" />
+                      Flagged
+                    </div>
+                  </section>
+                  <section
+                    class="flex bg-white items-center justify-start gap-6 pb-2"
+                  >
+                    <div></div>
+                    <div class="flex gap-3 font-light">
+                      <img src="/images/sent-item.svg" alt="to me" />
+                      To me
+                    </div>
+                  </section>
+                  <section
+                    class="flex bg-white items-center justify-start gap-6 pb-2"
+                  >
+                    <div></div>
+                    <div class="flex gap-4 font-light">
+                      <img src="/images/has-files.svg" alt="attach files" />
+                      Has files
+                    </div>
+                  </section>
+                  <section
+                    class="flex bg-white items-center justify-start border-b-2 border-b-[#edebe9] gap-6 pb-2"
+                  >
+                    <div></div>
+                    <div class="flex gap-3 font-light">
+                      <img src="/images/at.svg" alt="@" />
+                      Mentions me
+                    </div>
+                  </section>
+                  <section
+                    class="flex bg-white items-center dropdown justify-between relative"
+                  >
+                    Sort
+                    <img
+                      src="/images/greater-than-caret.svg"
+                      class="w-4"
+                      alt="caret greater greater-than-caret"
+                    />
+
+                    <div
+                      class="dropdown-menu bg-white w-[250px] absolute left-0 bottom-[-100px] top-0 right-0 bottom-0 z-9999"
+                    >
+                      <ul class="list-none pl-2 font-light text-[#323130] pr-3">
+                        <li class="text-[#323130] pb-2 text-[12px font-medium">
+                          Sort by
+                        </li>
+                        <li
+                          class="flex gap-2 z-50 pl-2 bg-white justify-start items-baseline pb-2"
+                        >
+                          <img src="/images/check-mark.svg" alt="mark" />
+                          <p class="text[#323130] font-light pb-2">Date</p>
+                        </li>
+                        <li class="pb-2 z-50 pl-2 bg-white">From</li>
+                        <li class="pb-2 z-50 pl-2 bg-white">Size</li>
+                        <li class="pb-2 z-50 pl-2 bg-white">Importance</li>
+                        <li
+                          class="border-b-2 z-50 pl-2 bg-white border-b-[#edebe9] pb-2"
+                        >
+                          Subject
+                        </li>
+                        <li
+                          class="text-[#323130] z-50 pl-2 bg-white text-[12px font-medium"
+                        >
+                          Sort
+                        </li>
+                        <li class="pb-2 z-50 pl-2 bg-white">
+                          Oldest on the top
+                        </li>
+                        <li class="flex z-50 pl-2 bg-white gap-2 pb-2">
+                          <img src="/images/check-mark.svg" alt="mark" />
+                          Newest on the top
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <section>
+              <input
+                type="radio"
+                name="focus-other-tab"
+                value="focus-box"
+                id="focus-client-message"
+                class="peer sr-only"
+                checked
+              />
+              <div
+                class="hidden overflow-auto min-w-[330px] max-w-[580px] peer-checked:block h-full"
+              >
+                <a href="/pages/inbox.html">
+                  <div
+                    class="flex shrink-0 bg-white pl-2 pt-2 pb-2 hover:cursor-pointer hover:bg-[#f3f2f1] border-b border-solid border-[#f0f0f0] min-w-[330px] max-w-[580px] pl-2 overflow-auto"
+                  >
+                    <p
+                      class="text-[white] text-[13px] border-2 bg-[#881798] rounded-full w-8 h-8 p-1 flex place-content-center"
+                    >
+                      GO
+                    </p>
+                    <div class="client flex flex-col flex-1 peer pr-[15%] pl-2">
+                      <div class="flex justify-between gap-1">
+                        <p class="text-[#201f1e] text-[14px]">
+                          Goodnews Iko-Oji Oji
+                        </p>
+                        <div class="mail">
+                          <img
+                            class="hover:bg-[#f3f2f1]"
+                            src="/images/envelop-knowledge.svg"
+                            alt="envelop hover"
+                          />
+                          <img
+                            class="w-3"
+                            src="/images/flag-knowledge.svg"
+                            alt="flag hover"
+                          />
+                          <img
+                            src="/images/pin-knowledge.svg"
+                            alt="pin hover"
+                          />
+                        </div>
+                        <img
+                          src="images/calen-article.svg"
+                          class="calen"
+                          alt="calender article"
+                        />
+                      </div>
+                      <div class="flex gap-4">
+                        <div class="flex">
+                          <img
+                            src="images/rightcaret.svg"
+                            alt="caret greater than"
+                          />
+                          <p class="text-[#201f1e] text-[14px]">
+                            knowledge sharin...
+                          </p>
+                        </div>
+                        <date
+                          datetime="10:14"
+                          class="text-[12px] text-[#201f1e]"
+                          >Wed 10:14AM</date
+                        >
+                      </div>
+                      <div class="flex">
+                        <p class="text-[#605e5c] text-[14px] whitespace-nowrap">
+                          Hello Xperts, We are pleased to pres...
+                        </p>
+                        <img
+                          src="/images/new-delete.svg"
+                          class="w-5 hidden images-hover"
+                          alt=" new images"
+                        />
+                      </div>
+                      <div class="bg-[#faf9f8] flex gap-2 pl-2 pr-[2px]">
+                        <img
+                          src="images/calen-article.svg"
+                          alt="calender article"
+                        />
+                        <div class="flex flex-col tex-[605e5c]">
+                          <date datetime="3:00" class="text-[14px]"
+                            >Thu 8/25/2022 3:00...</date
+                          >
+                          <p class="text-[12px]">No conflicts</p>
+                        </div>
+                        <div
+                          class="bg-[#edebe9] text-[14px] font-semibold text-[#0061b1] p-2"
+                        >
+                          <p>RSVP</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div
+                  class="flex shrink-0 pl-2 pl-2 pt-2 pb-2 bg-white hover:cursor-pointer hover:bg-[#f3f2f1] border-b border-solid border-[#f0f0f0] min-w-[330px] max-w-[580px] overflow-auto"
+                >
+                  <p
+                    class="text-[white] text-[13px] border-2 bg-[#d13438] rounded-full w-8 h-8 p-1 flex place-content-center"
+                  >
+                    TM
+                  </p>
+                  <div class="flex client flex-col flex-1 pl-2 pr-[15%]">
+                    <div class="flex justify-between">
+                      <p class="text-[#201f1e] text-[14px]">
+                        Talent Management
+                      </p>
+                      <div class="mail">
+                        <img
+                          class="hover:bg-[#f3f2f1]"
+                          src="/images/envelop-knowledge.svg"
+                          alt="envelop hover"
+                        />
+                        <img
+                          class="w-3"
+                          src="/images/flag-knowledge.svg"
+                          alt="flag hover"
+                        />
+                        <img src="/images/pin-knowledge.svg" alt="pin hover" />
+                      </div>
+                      <img src="images/attach.svg" class="calen" alt="attach" />
+                    </div>
+                    <div class="flex gap-4">
+                      <p class="text-[#201f1e] text-[14px]">
+                        Wedding Ceremony I...
+                      </p>
+                      <date datetime="10:14" class="text-[12px] text-[#201f1e]"
+                        >Wed 9:33AM</date
+                      >
+                    </div>
+                    <div class="flex gap-1 whitespace-nowrap">
+                      <p class="text-[#605e5c] text-[14px]">
+                        Dear All, We are all invited to the eng...
+                      </p>
+                      <img
+                        src="/images/new-delete.svg"
+                        class="w-5 hidden images-hover"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex justify-between">
+                      <img
+                        src="images/wedding-iv.jpeg"
+                        alt="wedding-iv"
+                        class="w-12"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 pl-2 pl-2 pt-2 pb-2 bg-white hover:cursor-pointer hover:bg-[#f4f9fd] border-b border-solid border-[#f0f0f0] min-w-[330px] max-w-[580px] overflow-auto"
+                >
+                  <p
+                    class="text-[white] text-[13px] border-2 bg-[#d13438] rounded-full w-8 h-8 p-1 flex place-content-center"
+                  >
+                    CC
+                  </p>
+                  <div class="flex client flex-col flex-1 pl-2">
+                    <div class="flex gap-[60px]">
+                      <p class="text-[#201f1e] text-[14px]">
+                        Corporate Communications
+                      </p>
+                      <img src="images/attach.svg" class="calen" alt="attach" />
+                      <div class="mail">
+                        <img
+                          class="hover:bg-[#f3f2f1]"
+                          src="/images/envelop-knowledge.svg"
+                          alt="envelop hover"
+                        />
+                        <img
+                          class="w-3"
+                          src="/images/flag-knowledge.svg"
+                          alt="flag hover"
+                        />
+                        <img src="/images/pin-knowledge.svg" alt="pin hover" />
+                      </div>
+                    </div>
+                    <div class="flex gap-4">
+                      <p class="text-[#201f1e] text-[14px]">
+                        Xpert insider (August)
+                      </p>
+                      <date datetime="2:54PM" class="text-[12px] text-[#201f1e]"
+                        >Wed 2:54PM</date
+                      >
+                    </div>
+                    <div class="flex gap-3">
+                      <p class="text-[#605e5c] text-[14px]">
+                        Hi Xperts, Welcome to another editi...
+                      </p>
+                      <img
+                        src="/images/new-delete.svg"
+                        class="w-5 hidden images-hover"
+                        alt=" new images"
+                      />
+                    </div>
+                    <div class="flex space-x-2 justify-center">
+                      <div>
+                        <button
+                          type="button"
+                          class="inline-block border-2 border-[#323130]-500 px-6 pt-2.5 pb-2 bg-white-600 text-[#323130] font-medium text-xs leading-normal rounded shadow-md hover:bg-[#e5e7eb]-700 hover:shadow-lg focus:bg-[#e5e7eb]-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#e5e7eb]-800 active:shadow-lg transition duration-150 ease-in-out flex align-center"
+                        >
+                          <img
+                            class="w-5 mr-2"
+                            src="images/img-pdf.png"
+                            alt="pdf imaage"
+                          />
+                          Xpert insider (A...
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex client shrink-0 bg-white pl-2 pt-2 pb-2 hover:cursor-pointer hover:bg-[#f3f2f1] border-b border-solid border-[#f0f0f0] min-w-[330px] max-w-[580px] overflow-auto"
+                >
+                  <p
+                    class="text-[white] text-[13px] border-2 bg-[#881798] rounded-full w-8 h-8 p-1 flex place-content-center"
+                  >
+                    GE
+                  </p>
+                  <div class="flex flex-col flex-1 pl-2 pr-[15%]">
+                    <div class="flex justify-between">
+                      <p class="text-[#201f1e] text-[14px]">
+                        Gloria Eromonsele
+                      </p>
+                      <div class="mail">
+                        <img
+                          class="hover:bg-[#f3f2f1]"
+                          src="/images/envelop-knowledge.svg"
+                          alt="envelop hover"
+                        />
+                        <img
+                          class="w-3"
+                          src="/images/flag-knowledge.svg"
+                          alt="flag hover"
+                        />
+                        <img src="/images/pin-knowledge.svg" alt="pin hover" />
+                      </div>
+                    </div>
+                    <div class="flex gap-4 whitespace-nowrap">
+                      <p class="text-[#201f1e] text-[14px]">
+                        ATS ASSESSMENT- Fro...
+                      </p>
+                      <date datetime="2:43" class="text-[12px] text-[#201f1e]"
+                        >Tue 2:43PM</date
+                      >
+                      <img
+                        src="/images/new-delete.svg"
+                        class="w-5 hidden images-hover"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-[#605e5c] text-[14px]">
+                      Dear Xperts, I trust this email finds y...
+                    </p>
+                  </div>
+                </div>
+
+                <p class="text-[#3f3e3d] p-3">Last week</p>
+
+                <div
+                  class="flex pl-2 pl-2 pt-2 pb-2 shrink-0 bg-white hover:cursor-pointer hover:bg-[#f3f2f1] border-b border-solid border-[#f0f0f0] min-w-[330px] max-w-[580px] overflow-auto client"
+                >
+                  <p
+                    class="text-[white] text-[13px] border-2 bg-[#8d572d] rounded-full w-8 h-8 p-1 flex place-content-center"
+                  >
+                    R
+                  </p>
+                  <div class="flex flex-col flex-1 pl-2">
+                    <div class="flex gap-2 whitespace-wrap">
+                      <code class="bg-[#f3f2f1] text-[#605e5c] text-[11px]"
+                        >External</code
+                      >
+                      <p class="text-[#201f1e] text-[14px]">
+                        Ridwan Olanrewaju in Teams
+                      </p>
+                      <div class="mail">
+                        <img
+                          class="hover:bg-[#f3f2f1] w-3"
+                          src="/images/envelop-knowledge.svg"
+                          alt="envelop hover"
+                        />
+                        <img
+                          class="w-3"
+                          src="/images/flag-knowledge.svg"
+                          alt="flag hover"
+                        />
+                        <img
+                          src="/images/pin-knowledge.svg"
+                          class="w-3"
+                          alt="pin hover"
+                        />
+                      </div>
+                    </div>
+                    <div class="flex gap-4">
+                      <div class="flex">
+                        <p class="text-[#201f1e] text-[14px]">
+                          Ridwan sent a message
+                        </p>
+                      </div>
+                      <date datetime="10:14" class="text-[12px] text-[#201f1e]"
+                        >Thu 8/18</date
+                      >
+                      <img
+                        src="/images/new-delete.svg"
+                        class="w-5 hidden images-hover"
+                        alt=" new images"
+                      />
+                    </div>
+                    <p class="text-[#605e5c] text-[14px]">
+                      function duplicateCount(text)(retu...
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 pl-2 pl-2 pt-2 pb-2 bg-white hover:cursor-pointer hover:bg-[#f3f2f1] border-b border-solid border-[#f0f0f0] min-w-[330px] max-w-[580px] overflow-auto"
+                >
+                  <p
+                    class="text-[white] text-[13px] border-2 bg-[#881798] rounded-full w-8 h-8 p-1 flex place-content-center"
+                  >
+                    DO
+                  </p>
+                  <div class="flex client flex-col pl-2 flex-1 pr-[15%]">
+                    <div class="flex justify-between">
+                      <p class="text-[#201f1e] text-[14px]">Dotun Olomola</p>
+                      <img src="images/attach.svg" class="calen" alt="attach" />
+                      <div class="mail">
+                        <img
+                          class="hover:bg-[#f3f2f1]"
+                          src="/images/envelop-knowledge.svg"
+                          alt="envelop hover"
+                        />
+                        <img
+                          class="w-3"
+                          src="/images/flag-knowledge.svg"
+                          alt="flag hover"
+                        />
+                        <img src="/images/pin-knowledge.svg" alt="pin hover" />
+                      </div>
+                    </div>
+                    <div class="flex gap-4 whitespace-nowrap">
+                      <div class="flex">
+                        <img
+                          src="images/rightcaret.svg"
+                          alt="caret greater than"
+                        />
+                        <p class="text-[#201f1e] text-[14px]">
+                          knowledge sharin...
+                        </p>
+                      </div>
+                      <date datetime="10:14" class="text-[12px] text-[#201f1e]"
+                        >Wed 10:14AM</date
+                      >
+                      <img
+                        src="/images/new-delete.svg"
+                        class="hidden images-hover"
+                        alt="delete hover"
+                      />
+                    </div>
+                    <p class="text-[#605e5c] text-[14px]">
+                      Hello Xperts, We are pleased to pres...
+                    </p>
+                    <div class="bg-[#faf9f8] flex gap-2 pl-2 pr-[2px]">
+                      <img
+                        src="images/calen-article.svg"
+                        alt="calender article"
+                      />
+                      <div class="flex flex-col tex-[605e5c]">
+                        <date datetime="3:00" class="text-[14px]"
+                          >Thu 8/25/2022 3:00...</date
+                        >
+                        <p class="text-[12px]">No conflicts</p>
+                      </div>
+                      <div
+                        class="bg-[#edebe9] text-[14px] font-semibold text-[#0061b1] p-2"
+                      >
+                        <p>RSVP</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 pl-2 pl-2 pt-2 pb-2 bg-white hover:cursor-pointer hover:bg-[#f3f2f1] border-b client border-solid border-[#f0f0f0] min-w-[330px] max-w-[580px] overflow-auto"
+                >
+                  <p
+                    class="text-[white] text-[13px border-2 bg-[#881798] rounded-full w-8 h-8 p-1 flex place-content-center"
+                  >
+                    CC
+                  </p>
+                  <div class="flex pl-2 flex-col flex-1">
+                    <div class="flex gap-[60px]">
+                      <p class="text-[#201f1e] text-[14px]">
+                        Corporate Communications
+                      </p>
+                      <img src="images/attach.svg" class="calen" alt="attach" />
+                      <div class="mail">
+                        <img
+                          class="hover:bg-[#f3f2f1]"
+                          src="/images/envelop-knowledge.svg"
+                          alt="envelop hover"
+                        />
+                        <img
+                          class="w-3"
+                          src="/images/flag-knowledge.svg"
+                          alt="flag hover"
+                        />
+                        <img src="/images/pin-knowledge.svg" alt="pin hover" />
+                      </div>
+                    </div>
+                    <div class="flex gap-4">
+                      <div class="flex">
+                        <img
+                          src="images/rightcaret.svg"
+                          alt="caret greater than"
+                        />
+                        <p class="text-[#201f1e] text-[14px]">
+                          knowledge sharin...
+                        </p>
+                      </div>
+                      <div class="flex whitespace-nowrap">
+                        <date
+                          datetime="10:14"
+                          class="text-[12px] text-[#201f1e]"
+                          >Wed 10:14AM</date
+                        >
+                        <img
+                          src="/images/new-delete.svg"
+                          class="hidden images-hover"
+                          alt="delete hover"
+                        />
+                      </div>
+                    </div>
+                    <p class="text-[#605e5c] text-[14px]">
+                      Hello Xperts, We are pleased to pres...
+                    </p>
+                    <div class="bg-[#faf9f8] flex gap-2 pl-2 pr-[2px]">
+                      <img
+                        src="images/calen-article.svg"
+                        alt="calender article"
+                      />
+                      <div class="flex flex-col tex-[605e5c]">
+                        <date datetime="3:00" class="text-[14px]"
+                          >Thu 8/25/2022 3:00...</date
+                        >
+                        <p class="text-[12px]">No conflicts</p>
+                      </div>
+                      <div
+                        class="bg-[#edebe9] text-[14px] font-semibold text-[#0061b1] p-2"
+                      >
+                        <p>RSVP</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="h-full overflow-auto">
+              <input
+                type="radio"
+                name="focus-other-tab"
+                value="other-details"
+                id="other-empty-box"
+                class="peer sr-only"
+              />
+              <div
+                class="hidden flex-col gap-3 shrink-0 pl-2 pt-2 border-b border-solid border-[#f0f0f0] min-w-[350px] max-w-[600px] overflow-auto shrink-0 items-center justify-center bg-white peer-checked:flex h-full"
+              >
+                <img src="/images/drink.svg" alt="drinking cup" />
+                <p class="text-[#323130] text-[14px] font-semibold">
+                  Nothing left to read
+                </p>
+                <p class="text-[#605e5c] text-[14px] font-light">
+                  Enjoy your empty inbox
+                </p>
+              </div>
+            </section>
+          </article>
+          <article class="flex flex-col overflow-auto gap-2 h-full flex-1">
+            <div
+              class="bg-white border-[#edebe9] border sticky top-0 shrink-0 overflow-auto flex bg-white pl-6 pt-3 pr-6 gap-6"
+            >
+              <section class="flex flex-col gap-2 items-center">
+                <p
+                  class="text-[white] text-[13px] border-2 bg-[#605e5c] rounded-full w-8 h-8 p-1 flex place-content-center"
+                >
+                  <img
+                    class="w-3"
+                    src="/images/calender-clear-outline.svg"
+                    alt="calender clear"
+                  />
+                </p>
+                <img
+                  src="/images/white-clock-twelve.svg"
+                  class="w-4"
+                  alt="white clock"
+                />
+                <img
+                  src="/images/location-outline.svg"
+                  class="w-4 mt-[8px]"
+                  alt="location-outline"
+                />
+                <img
+                  src="/images/two-persons.svg"
+                  class="w-4 mt-[8px]"
+                  alt="two-persons"
+                />
+              </section>
+              <section class="flex flex-col flex-1 gap-2 items-start">
+                <p
+                  class="text-[#605e5c] text-[1.0625rem] pt-[0.3125rem] font-semibold"
+                >
+                  <abbr
+                    class="no-underline"
+                    title=" Knowldege Sharing Session: Fireside Chat with MD, AFIL - Samirah Ade-Adebiyi"
+                  >
+                    Knowledge Sharing Session: Fireside Chat with MD, AFIL -
+                    Samirah Ade-Adebiyi</abbr
+                  >
+                </p>
+                <p class="text-[#f2f6fe] text-[14px] font-light">
+                  This event occurred 4 days ago
+                  <span class="text-[#f2f6fe] text-[14px] font-light"
+                    >Thu 8/25/2022 3:00 PM - 4:00 PM</span
+                  >
+                </p>
+                <p class="text-[#323130] text-[14px] font-light">
+                  Teams meeting
+                </p>
+                <p class="text-[0.875rem]">
+                  <span class="text-[#323130] font-light"
+                    >Goodnews Iko-Oji Oji invited you</span
+                  >
+                  <span class="text-[#0576d9] font-light"
+                    >Accepted 28, Didn't respond 5</span
+                  >
+                </p>
+                <div
+                  class="flex gap-3 text-[#8a8886] text-[14px] font-light"
+                >
+                  <div
+                    class="flex justify-center hover:border-b-w-150px align-center p-3 hover:cursor-pointer border-b-[#0576d9] hover:bg-[#edebe9] border-b-2"
+                  >
+                    Messages
+                  </div>
+                  <div
+                    class="flex justify-center hover:border-b-w-150px align-center p-3 hover:cursor-pointer hover:border-b-[#0576d9] hover:bg-[#edebe9] hover:border-b-2"
+                  >
+                    Meeting Details
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div
+                  class="flex p-1.5 gap-2 bg-[#f3f2f1] active:bg-[#edebe9] border-2 hover:cursor-pointer rounded-md relative border-2 border-[#8a8886] whitespace-nowrap overflow-visible items-center ml-[200px]"
+                >
+                  <p class="text-[14px] text-[#323130]">Follow up</p>
+
+                  <details>
+                    <summary class="list-none">
+                      <img
+                        class="w-3"
+                        src="/images/black-caret.svg"
+                        alt="black-caret dropdown"
+                      />
+                    </summary>
+                    <div
+                      class="bg-white border border-[#e4e4e4] w-[200px] absolute left-[-100px] top-[40px] p-[10px] z-60"
+                    >
+                      <ul class="list-none">
+                        <li class="flex gap-2 mb-3">
+                          <div class="relative">
+                            <img
+                              src="/images/next-meeting.svg"
+                              alt="Schedule next meeting"
+                            />
+                            <img
+                              src="/images/return-left.svg"
+                              alt="return-left"
+                              class="absolute bottom-[5px] right-[0px]"
+                            />
+                          </div>
+                          <p class="text-[#323130] font-light">
+                            Schedule next meeting
+                          </p>
+                        </li>
+                        <li class="flex gap-2 mb-3">
+                          <img
+                            src="/images/reply-organiser.svg"
+                            alt="Reply organiser"
+                          />
+                          <p class="text-[#323130] font-light">
+                            Reply to organiser
+                          </p>
+                        </li>
+                        <li class="flex gap-2 mb-3">
+                          <img
+                            src="/images/reply-organiser.svg"
+                            alt="Reply organiser"
+                          />
+                          <p class="text-[#323130] font-light">
+                            Reply to all attendees
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+                </div>
+              </section>
+            </div>
+            <div
+              class="bg-white hover:bg-[#f3f2f1] pt-[16px] pb-[16px] overflow-auto shrink-0 rounded w-full border-[#edebe9] border flex bg-white pl-6 pt-3 pr-6 gap-6"
+            >
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="15"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#000000"
+                    d="M19.5 4h-3V2.5a.5.5 0 0 0-1 0V4h-7V2.5a.5.5 0 0 0-1 0V4h-3A2.503 2.503 0 0 0 2 6.5v13A2.503 2.503 0 0 0 4.5 22h15a2.502 2.502 0 0 0 2.5-2.5v-13A2.502 2.502 0 0 0 19.5 4zM21 19.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 19.5V11h18v8.5zm0-9.5H3V6.5C3 5.672 3.67 5 4.5 5h3v1.5a.5.5 0 0 0 1 0V5h7v1.5a.5.5 0 0 0 1 0V5h3A1.5 1.5 0 0 1 21 6.5V10z"
+                  />
+                </svg>
+              </div>
+              <div class="flex flex-col flex-1 gap-3">
+                <div>
+                  <span class="font-light text-[#8a8886]"
+                    >Goodnews Iko-Oji Oji</span
+                  >
+                  <span class="text-[10px] text-[#8a8886] font-light"
+                    >updated the meeting</span
+                  >
+                </div>
+                <p class="text-[#8a8688] text-[12px]">
+                  New meeting time: Thu 8/25/2022 3:00 PM - 4:00 PM
+                </p>
+              </div>
+              <date
+                class="font-light mt-[35px] ml-[365px] whitespace-nowrap text-[#8a8886] text-[12px]"
+                datetime="10:14AM"
+                >Wed 8/24/2022 10:14AM</date
+              >
+            </div>
+            <div
+              class="bg-white hover:bg-[#f3f2f1] pt-[16px] pb-[16px] overflow-auto shrink-0 rounded w-full border-[#edebe9] border flex bg-white pl-6 pt-3 pr-6 gap-6"
+            >
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="15"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#000000"
+                    d="M19.5 4h-3V2.5a.5.5 0 0 0-1 0V4h-7V2.5a.5.5 0 0 0-1 0V4h-3A2.503 2.503 0 0 0 2 6.5v13A2.503 2.503 0 0 0 4.5 22h15a2.502 2.502 0 0 0 2.5-2.5v-13A2.502 2.502 0 0 0 19.5 4zM21 19.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 19.5V11h18v8.5zm0-9.5H3V6.5C3 5.672 3.67 5 4.5 5h3v1.5a.5.5 0 0 0 1 0V5h7v1.5a.5.5 0 0 0 1 0V5h3A1.5 1.5 0 0 1 21 6.5V10z"
+                  />
+                </svg>
+              </div>
+              <div class="flex flex-col flex-1 gap-3">
+                <div>
+                  <span class="font-light text-[#8a8886]"
+                    >Goodnews Iko-Oji Oji</span
+                  >
+                  <span class="text-[10px] text-[#8a8886] font-light"
+                    >updated the meeting</span
+                  >
+                </div>
+                <p class="text-[#8a8688] text-[12px]">
+                  New meeting time: Thu 8/25/2022 3:00 PM - 4:00 PM
+                </p>
+              </div>
+              <date
+                class="font-light mt-[35px] ml-[365px] whitespace-nowrap text-[#8a8886] text-[12px]"
+                datetime="10:14AM"
+                >Wed 8/24/2022 10:14AM</date
+              >
+            </div>
+            <div
+              class="bg-white pt-[16px] space-between hover:bg-[#f3f2f1] pb-[16px]  shrink-0 rounded w-full mr-[20px] border-[#edebe9] border flex bg-white pl-6 pt-3 pr-6 gap-6"
+            >
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="15"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#000000"
+                    d="M19.5 4h-3V2.5a.5.5 0 0 0-1 0V4h-7V2.5a.5.5 0 0 0-1 0V4h-3A2.503 2.503 0 0 0 2 6.5v13A2.503 2.503 0 0 0 4.5 22h15a2.502 2.502 0 0 0 2.5-2.5v-13A2.502 2.502 0 0 0 19.5 4zM21 19.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 19.5V11h18v8.5zm0-9.5H3V6.5C3 5.672 3.67 5 4.5 5h3v1.5a.5.5 0 0 0 1 0V5h7v1.5a.5.5 0 0 0 1 0V5h3A1.5 1.5 0 0 1 21 6.5V10z"
+                  />
+                </svg>
+              </div>
+              <div class="flex flex-col flex-1 gap-3">
+                <div class="flex gap-1 justify-start items-center">
+                  <span class="font-medium text-[#0576d9] whitespace-nowrap"
+                    >Goodnews Iko-Oji Oji</span
+                  >
+                  <span
+                    class="text-[10px] text-[#8a8886] font-light whitespace-nowrap"
+                    >sent a meeting request</span
+                  >
+                </div>
+                <p class="text-[#8a8688] flex-1 text-[12px]">
+                  Hello Xperts, We are pleased to present to you another episode
+                  of our Knowledge Sharing Session, this time, a fireside chat
+                  with our very...
+                </p>
+              </div>
+              <date
+                class="font-light mt-[35px] whitespace-nowrap text-[#8a8886] text-[12px]"
+                datetime="10:14AM"
+                >Wed 8/24/2022 10:14AM</date
+              >
+            </div>
+          </article>  
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tw.js"></script>
+  </body>
+</html>
